@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AD3EF374-AE00-0298-38D1-E0B350E73256" name="EJERCICIO">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:14:28 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_EJERCICO" id="A8E7996D-9758-B086-3454-D79D7AC5CC87">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:14:42 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE_EJERCIO" id="F337A7D7-F26A-85A2-6047-132BD822E7C4">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:14:42 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION_EJERCICIO" id="39375567-0C21-6455-4457-0547392B09F9">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:14:42 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASOS_EJERCICIO" id="45A3C0EA-40D9-A00F-4998-7F476FEC3AE5">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:14:42 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POPULARIDAD_EJERCICIO" id="577BE55F-DBED-7C59-B4B3-EA7597B7A6DD">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:14:43 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78967C33-2872-E68B-F975-3B9C52A6CEAE" name="EJERCICIO PK">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:14:44 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A8E7996D-9758-B086-3454-D79D7AC5CC87</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

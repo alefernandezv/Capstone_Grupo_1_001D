@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="571E4920-FA17-7ADC-ABFB-9092757F8B48" name="MEDICO">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:48 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MEDICO" id="CA7BB514-BE7B-74FB-1005-65D197999934">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:54 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUT_MEDICO" id="18877E72-8583-0CEB-0058-2BCA843704ED">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:55 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DV_MEDICO" id="278C045C-A7C5-475F-42AE-34567598799B">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:55 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE_MEDICO" id="6862FBD1-0198-18AE-8ACC-C5E4B82B7526">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:55 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL_MEDICO" id="F6D8AF5D-B232-3225-ACD3-C65C7C4A38D5">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:55 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_NAC" id="3B331023-092F-BAB1-7F5A-4EB07090F977">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:55 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GENERO_PACIENTE" id="D6121B54-EA9C-845D-C5B6-65DD48926919">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:32:53 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESPECIALIDAD" id="02DDC1C1-D1E6-BC40-6B2F-197FD2DE02BE">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:32:54 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0FFF363E-CFBD-2685-D79D-665525570C34" name="MEDICO PK">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:30:58 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CA7BB514-BE7B-74FB-1005-65D197999934</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

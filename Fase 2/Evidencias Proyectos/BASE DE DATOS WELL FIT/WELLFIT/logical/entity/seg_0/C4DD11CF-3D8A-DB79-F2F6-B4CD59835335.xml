@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4DD11CF-3D8A-DB79-F2F6-B4CD59835335" name="HISTORIAL_PESO">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:28:06 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_HISTORIAL_PESO" id="3C6AB860-3DB5-5931-B571-3479028BE68D">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:28:23 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_CAMBIO" id="DE302E03-E964-2318-93F1-F67F1F586297">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:28:23 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESO" id="94245684-9E4E-461F-23C2-9D95FB53B241">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:28:23 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4D6DF1DA-B986-6566-15D9-B83ED56F0618" name="HISTORIAL_PESO PK">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:29:01 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C6AB860-3DB5-5931-B571-3479028BE68D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

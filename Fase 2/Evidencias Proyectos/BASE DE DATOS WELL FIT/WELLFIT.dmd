@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="WELLFIT" id="86341169-EF23-D65D-9BC6-2949FE65E8A6" version="3.5">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 20:31:54 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>86341169-EF23-D65D-9BC6-2949FE65E8A6</designId>
+</OSDM_Design>
