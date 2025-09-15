@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EEE42CD7-DB30-C2D0-0B72-B1581EC1C85D" name="PACIENTE">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:17:47 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PACIENTE" id="08D55FC7-1186-A86E-AEA8-0225057F3DBA">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:07 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RUT_MEDICO" id="4FD26876-B0DB-C569-8DDE-9BB8D24ED30C">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:08 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DV_PACIENTE" id="A216938E-3CB1-0EA4-F15C-BA2220F5B68E">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:08 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE_PACIENTE" id="CA9FB72A-C067-032C-F0A3-C5862665D832">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:08 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL_PACIENTE" id="ACAE5E99-DA3B-15FE-ACAF-A9CBF5F647FB">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:08 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_NAC" id="205FCE2D-68C7-028D-83DE-7F55668373D5">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:10 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GENERO_PACIENTE" id="8206A841-8CFF-4524-34B5-B950A1738ED9">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:10 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ALTURA_PACIENTE" id="472C5089-6F21-BD0D-929A-6F7014A4D67F">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:24:14 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESO_ACTUAL" id="D328F5EB-7EB9-5564-E06B-78A3A4F96487">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:24:14 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MEDICO_ID_MEDICO" id="7F2E3F26-A049-23DB-A773-39DF265A0DD0">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:25:19 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B33548E8-843C-E7EB-3E88-341FCC68A217" name="PACIENTE PK">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:19:18 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08D55FC7-1186-A86E-AEA8-0225057F3DBA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

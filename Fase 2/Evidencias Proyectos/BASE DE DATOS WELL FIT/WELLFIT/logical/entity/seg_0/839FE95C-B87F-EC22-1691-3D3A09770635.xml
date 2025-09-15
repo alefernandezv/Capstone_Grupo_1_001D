@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="839FE95C-B87F-EC22-1691-3D3A09770635" name="RECETA_ENFERMEDAD">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:09:47 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_RECETA_ENFERMADAD" id="A97315A2-286F-E885-453E-53D0D0DECD30">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:10:01 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46DD5ED1-8A4B-7D2E-815E-7954F10A97A9" name="RECETA_ENFERMEDAD PK">
+<createdBy>ridox</createdBy>
+<createdTime>2025-09-12 21:10:19 UTC</createdTime>
+<ownerDesignName>WELLFIT</ownerDesignName>
+<engineerTo>
+<item key="28F12FD4-C224-6239-65D6-9E54385CF873" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A97315A2-286F-E885-453E-53D0D0DECD30</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
