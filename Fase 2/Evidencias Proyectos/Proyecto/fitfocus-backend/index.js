@@ -21,7 +21,3 @@ app.listen(3000, () => console.log('Servidor en http://localhost:3000'));
 (async () => {
   await initOracle();
 })();
-
-app.use('/api/auth', authRoutes);
-
-app.listen(3000, () => console.log('Servidor en http://localhost:3000'));
