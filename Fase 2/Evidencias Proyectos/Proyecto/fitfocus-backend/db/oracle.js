@@ -1,14 +1,14 @@
-const oracledb = require('oracledb');
+import oracledb from 'oracledb';
 
 // Para devolver resultados como objetos
 oracledb.outFormat = oracledb.OUT_FORMAT_OBJECT;
 
 // Inicializa un pool de conexiones
-async function initOracle() {
+export async function initOracle() {
   try {
     await oracledb.createPool({
-      user: "paciente",        // 👈 pon aquí tu usuario de Oracle
-      password: "CapstoneSafe_2025",   // 👈 pon aquí tu password
+      user: "paciente",                  // 👈 tu usuario de Oracle
+      password: "CapstoneSafe_2025",     // 👈 tu password
       connectString: "localhost:1521/XEPDB1", // 👈 ejemplo: "localhost:1521/XEPDB1"
       poolMin: 1,
       poolMax: 5,
@@ -20,8 +20,6 @@ async function initOracle() {
   }
 }
 
-async function getConnection() {
+export async function getConnection() {
   return await oracledb.getConnection();
 }
-
-module.exports = { initOracle, getConnection };

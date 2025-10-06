@@ -1,11 +1,12 @@
-const express = require('express');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const User = require('../models/User');
-const verificarToken = require('../middleware/authMiddleware');
-const router = express.Router();
-const { getConnection } = require('../db/oracle');
+// auth.js
+import express from 'express';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import User from '../models/User.js';
+import verificarToken from '../middleware/authMiddleware.js';
+import { getConnection } from '../db/oracle.js';
 
+const router = express.Router();
 
 // POST /register
 router.post('/register', async (req, res) => {
@@ -62,6 +63,4 @@ router.put('/perfil', verificarToken, async (req, res) => {
   }
 });
 
-
-
-module.exports = router;
+export default router;
