@@ -51,11 +51,28 @@ const adminJs = new AdminJS({
       resource: Medico,
       options: {
         properties: {
-          _id: {
-            isVisible: { list: false, edit: false, filter: false, show: false },
-          },
           password: {
-            isVisible: { list: false, edit: false, filter: false, show: false },
+            type: 'password', // Campo tipo contraseña
+            isVisible: {
+              list: false,   // No mostrar en lista
+              filter: false, // No usar en filtros
+              show: false,   // No mostrar en detalle
+              edit: true,    // Visible al crear/editar
+            },
+          },
+          RUT_Medico: { 
+            type: 'number', 
+            isVisible: { edit: true, list: true, filter: true, show: true } 
+          },
+          DV_Medico: { 
+            isVisible: { edit: true, list: true, filter: true, show: true } 
+          },
+          Genero_Medico: {
+            availableValues: [
+              { value: 'Masculino', label: 'Masculino' },
+              { value: 'Femenino', label: 'Femenino' },
+              { value: 'Otro', label: 'Otro' },
+            ],
           },
         },
       },
@@ -63,7 +80,7 @@ const adminJs = new AdminJS({
     {
       resource: Especialidad,
       options: {
-        navigation: { name: 'Gestión Médica', icon: 'Stethoscope' },
+        navigation: { name: 'Gestión Médica', icon: 'Book' },
         actions: {
           delete: {
             guard: '¿Seguro que deseas eliminar esta especialidad? Esta acción no se puede deshacer.',
@@ -74,7 +91,7 @@ const adminJs = new AdminJS({
   ],
   rootPath: '/admin',
   branding: {
-    companyName: 'FitFocus Admin',
+    companyName: 'WellFit Admin',
     logo: false,
     softwareBrothers: false,
   },
