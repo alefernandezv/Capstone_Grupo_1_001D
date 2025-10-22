@@ -1,0 +1,78 @@
+/* Variables de colores para light y dark */
+:root[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f9f9f9;
+  --navbar-bg: #ffffff;
+  --sidebar-bg: #f0f0f0;
+  --input-bg: #ffffff;
+  --input-text: #000000;
+}
+
+:root[data-theme='dark'] {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --card-bg: #2a2a2a;
+  --navbar-bg: #2a2a2a;
+  --sidebar-bg: #2a2a2a;
+  --input-bg: #3a3a3a;
+  --input-text: #ffffff;
+}
+
+/* Fondo general y textos */
+#app,
+.adminjs_App,
+.adminjs_App__inner,
+.adminjs_Container,
+.adminjs_Main {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Tarjetas y cajas */
+.adminjs_Box,
+.adminjs_Card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Navbar superior */
+.adminjs_Navbar {
+  background-color: var(--navbar-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Sidebar */
+.adminjs_Sidebar {
+  background-color: var(--sidebar-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Inputs y selects */
+input,
+select,
+textarea {
+  background-color: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  border: 1px solid #555 !important;
+}
+
+/* Links y labels */
+a, .adminjs_Text, .adminjs_Label {
+  color: var(--text-color) !important;
+}
+
+/* Tablas */
+.adminjs_Table,
+.adminjs_TableRow,
+.adminjs_TableCell {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* Botones */
+button, .adminjs_Button {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid #555 !important;
+}

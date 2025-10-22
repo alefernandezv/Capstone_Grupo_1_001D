@@ -47,7 +47,7 @@ const medicoSchema = new mongoose.Schema({
     enum: ['Masculino', 'Femenino', 'Otro'],
     required: [true, 'El género es obligatorio'],
   },
-  Especialidad_ID_Especialidad: {
+  Especialidad: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Especialidad',
     required: [true, 'La especialidad es obligatoria'],
@@ -60,4 +60,3 @@ const medicoSchema = new mongoose.Schema({
 });
 
 export default mongoose.model('Medico', medicoSchema);
-  
