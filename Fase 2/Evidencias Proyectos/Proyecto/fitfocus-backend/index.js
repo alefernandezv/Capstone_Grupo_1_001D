@@ -1,15 +1,15 @@
-// index.js
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import AdminJS from 'adminjs';
 import AdminJSExpress from '@adminjs/express';
 import { Database, Resource } from '@adminjs/mongoose';
+import bcrypt from 'bcrypt';
+
 import authRoutes from './routes/auth.js';
 import medicosRoutes from './routes/medicos.js';
-import especialidadesRoutes from './routes/especialidades.js';
 import { initOracle } from './db/oracle.js';
-import User from './models/User.js';
+import Paciente from './models/Paciente.js'; // ahora paciente
 import Medico from './models/Medico.js';
 import Especialidad from './models/Especialidad.js';
 
@@ -20,67 +20,114 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 
 // Conexión a MongoDB
 mongoose.connect('mongodb://localhost:27017/fitfocus', {})
   .then(() => console.log('✅ MongoDB conectado'))
-  .catch(err => console.error('❌ Error al conectar a MongoDB:', err));
+  .catch(err => console.error(err));
 
-// Rutas
+// Rutas de la API
 app.use('/api/auth', authRoutes);
 app.use('/api/medicos', medicosRoutes);
-app.use('/api/especialidades', especialidadesRoutes);
 
 // Configuración de AdminJS
 const adminJs = new AdminJS({
   resources: [
-    {
-      resource: User,
+    { 
+      resource: Medico, 
       options: {
         properties: {
-          _id: {
-            isVisible: { list: false, edit: false, filter: false, show: false },
+          _id: { isVisible: false },
+          password: { 
+            type: 'password', 
+            isVisible: { list: false, edit: true, filter: false, show: false } 
           },
-          password: {
-            isVisible: { list: false, edit: false, filter: false, show: false },
-          },
+          Genero_Medico: {
+            availableValues: [
+              { value: 'Masculino', label: 'Masculino' },
+              { value: 'Femenino', label: 'Femenino' },
+              { value: 'Otro', label: 'Otro' }
+            ]
+          }
         },
-      },
+        actions: {
+          new: {
+            before: async (request) => {
+              if(request.payload.password){
+                request.payload.password = await bcrypt.hash(request.payload.password, 10);
+              }
+              return request;
+            }
+          },
+          edit: {
+            before: async (request) => {
+              if(request.payload.password){
+                request.payload.password = await bcrypt.hash(request.payload.password, 10);
+              }
+              return request;
+            }
+          }
+        }
+      } 
     },
-    {
-      resource: Medico,
+    { 
+      resource: Paciente, 
       options: {
         properties: {
-          _id: {
-            isVisible: { list: false, edit: false, filter: false, show: false },
+          _id: { isVisible: false },
+          password: { 
+            type: 'password', 
+            isVisible: { list: false, edit: true, filter: false, show: false } 
           },
-          password: {
-            isVisible: { list: false, edit: false, filter: false, show: false },
-          },
+          Genero_Paciente: {
+            availableValues: [
+              { value: 'Masculino', label: 'Masculino' },
+              { value: 'Femenino', label: 'Femenino' },
+              { value: 'Otro', label: 'Otro' }
+            ]
+          }
         },
-      },
+        actions: {
+          new: {
+            before: async (request) => {
+              if(request.payload.password){
+                request.payload.password = await bcrypt.hash(request.payload.password, 10);
+              }
+              return request;
+            }
+          },
+          edit: {
+            before: async (request) => {
+              if(request.payload.password){
+                request.payload.password = await bcrypt.hash(request.payload.password, 10);
+              }
+              return request;
+            }
+          }
+        }
+      } 
     },
     {
       resource: Especialidad,
       options: {
-        navigation: { name: 'Gestión Médica', icon: 'Stethoscope' },
-        actions: {
-          delete: {
-            guard: '¿Seguro que deseas eliminar esta especialidad? Esta acción no se puede deshacer.',
-          },
-        },
-      },
-    },
+        properties: {
+          _id: { isVisible: false }
+        }
+      }
+    }
   ],
   rootPath: '/admin',
   branding: {
-    companyName: 'FitFocus Admin',
-    logo: false,
-    softwareBrothers: false,
+    companyName: 'WellFit Admin',
+  },
+  assets: {
+    scripts: ['/admin-theme-toggle.js'], // cargamos nuestro script del toggle
+    styles: ['/admin.css'],             // cargamos nuestro CSS
   },
 });
 
-// Router de AdminJS
+// Usar AdminJS con Express
 const adminRouter = AdminJSExpress.buildRouter(adminJs);
 app.use(adminJs.options.rootPath, adminRouter);
 
@@ -89,6 +136,6 @@ app.use(adminJs.options.rootPath, adminRouter);
   await initOracle();
 })();
 
-// Servidor
+// Iniciar servidor
 const PORT = 3000;
 app.listen(PORT, () => console.log(`🚀 Servidor en ejecución en http://localhost:${PORT}/admin`));
